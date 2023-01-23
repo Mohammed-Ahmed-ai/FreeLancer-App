@@ -1,0 +1,342 @@
+:root {
+  --dark-color: #353535;
+  --circals-color: #4d4a4a;
+  --Skyblue-color: #00BFF2;
+  --blue-color: #008FD5;
+}
+
+body {
+  font-family: 'Tajawal', sans-serif;
+ }
+
+.main-btn {
+  background-color: var(--Skyblue-color);
+}
+
+.main-btn:hover {
+  outline: 1px solid var(--Skyblue-color);
+  color: var(--blue-color) !important;
+}
+
+
+/* start navbar*/
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #FFFFFF;
+  font-weight: bold;
+  padding-bottom: 0;
+  padding-left: 20px;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--Skyblue-color);
+}
+
+.navbar-brand img {
+  height: 80px;
+}
+
+.navbar-brand h4 {
+  color: #008FD5;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/*end navbar*/
+
+/* start Fagncy */
+.Fagcy {
+  background-color: var(--dark-color);
+  height: calc(100vh - 75px);
+}
+
+.Fagcy img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 35px;
+  left: -8px;
+}
+
+
+.Fagcy .Image1 {
+     width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-image: linear-gradient(#FFFFFF 0%, #FFFFFF 2%, #000 100%);
+      outline: 5px dashed var(--blue-color);
+      position: relative;
+}
+
+.Fagcy h1 {
+  color: var(--blue-color);
+}
+
+/* start Fagncy */
+
+/*start service */
+.service {
+  background-color: var(--dark-color);
+}
+
+/*End service */
+
+/* start cards */
+.cards {
+  background-color: var(--dark-color);
+}
+
+.cards .card1 {
+  padding: 100px 30px;
+}
+
+.cards .card1:hover {
+  background-color: #FFFFFF;
+  color: var(--blue-color) !important;
+  border-radius: 10px;
+}
+
+.cards .card1:hover p {
+  color: #000 !important;
+}
+
+.cards a {
+  text-decoration: none;
+}
+
+.cards svg {
+  width: 100px;
+  height: 100px;
+  transform: translateY(-15px);
+}
+
+.card1 a>i {
+  width: 100px;
+}
+
+.dd {
+  position: relative;
+}
+
+.dd>svg {
+  position: absolute;
+  width: 20px;
+  top: -20px;
+  right: 2px;
+}
+
+/* end cards */
+
+/* start hire_us */
+.hire_us {
+  background-color: var(--dark-color);
+}
+
+/* end hire_us */
+
+
+/* start_over */
+.over {
+  background-color: var(--dark-color);
+}
+
+
+.circles {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: var(--circals-color);
+}
+
+.circle1 {
+  border: 2px dashed var(--dark-color);
+}
+
+.circle1>h1 {
+  color: var(--blue-color);
+}
+
+.circle2>h1 {
+  color: var(--blue-color);
+}
+
+
+
+.circle2 {
+  color: var(--blue-color);
+  border: 2px dashed var(--blue-color);
+}
+
+/* end_over */
+
+/*start cusom*/
+.custom{
+  background-color: var(--dark-color);
+ }
+
+.cards .crd1>h4{
+  color: var(--blue-color);
+}
+
+.cards .crd1{
+  width: 250px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.cards .crd1:hover::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: var(--blue-color);
+    position: absolute;
+    transform: rotate(10deg);
+    z-index: -1;
+    border-radius: inherit;
+   }
+
+     .cards .crd1:hover> h4{
+      color: #000 !important;
+     }
+     .cards .crd1:hover> svg{
+      color: #FFFFFF !important;
+     }
+     .cards .crd1:hover> p{
+      color: #FFFFFF !important;
+     }
+
+     .text4 > p::before{
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 3px;
+        left: -60px;
+        bottom: 9px;
+        background-color: var(--blue-color);
+     }
+
+         @media (max-width: 500px) {
+           .text4 {
+             padding:0 100px;
+           }
+          }
+/*end cusom*/
+
+/*start Affortable*/
+.Affortable{
+  background-color: var(--dark-color);
+}
+/*end Affortable*/
+
+
+/*start skills*/
+.skills{
+    background-color: var(--dark-color);
+}
+
+.skills .card{
+  height: 400px;
+  width:250px;
+  border: 2px dashed var(--blue-color);
+  background-color: var(--dark-color);
+}
+
+.skills .card>svg {
+  color: var(--blue-color);
+}
+
+.skills .card>p>span {
+  color: var(--blue-color);
+}
+.skills ul>li{
+  color: var(--blue-color);
+}
+.skills .card >a{
+  box-shadow:0 2px 5px  var(--blue-color);
+}
+
+.skills .card:hover{
+  border:  2px dashed #FFFFFF;
+}
+ 
+/*end skills*/
+
+/* start_Tuch */
+.Tuch{
+  background-color: var(--dark-color);
+   }
+
+
+.Tuch .Image3 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: linear-gradient(#FFFFFF 0%, #FFFFFF 2%, #000 100%);
+  outline: 5px dashed var(--blue-color);
+  transform: translateX(50%);
+   right: 70px;
+  bottom:5px;
+ }
+
+.Tuch img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 35px;
+  left: -8px;
+}
+
+ 
+
+.Tuch a {
+  box-shadow: 0 2px 5px var(--blue-color);
+}
+
+.gear1{
+  width: 150px;
+  height: 150px;
+  color: var(--Skyblue-color);
+  position: absolute;
+  left: 289px;
+  top: 200px;
+  transform: rotate(0.31turn);
+ }
+
+/* end_Tuch */
+
+
+/*strat footer*/
+.footer {
+background-color: var(--blue-color);
+}
+
+.footer-brand img {
+  height: 100px;
+}
+
+/*end footer*/
+
+/*start copyright */
+.copyright{
+  background-color: var(--dark-color);
+}
+/*end copyright */
